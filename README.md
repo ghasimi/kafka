@@ -109,4 +109,17 @@ Some Python packages to interface with Kafka:
 
 3. [faust](https://github.com/robinhood/faust), known for stream processing. Initially developed by Robinhood brokerage, but currently maintained by the communinty, forked as [faust-streaming](https://github.com/faust-streaming/faust). 
 
+### Kafka Streams in Python
+
+The recorded screen shows different piceses of Kafka and faust at work. From top-left, counter-clockwise: 
+
+* ZooKeeper to manage Kafka cluster
+* Kafka Broker
+* Simulated values sent as Kafka events (faust)
+* Streams of events recevied and processed (faust)
+* Real-time plot of the proccessed events (matplotlib)
+
+![kafka+faust](./kafka+faust.gif)
+
+Showing other interesting features of Kafka like parallelism or asynchronous jobs needs playing with paritions and adding a little bit of randomness and delays, e.g. to resemble computational time in processing, or the waiting time in accessing a real API.
 
