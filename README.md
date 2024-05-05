@@ -2,9 +2,15 @@
 
 Summary notes on Kafka.
 
-"Apache Kafka is an open-source distributed event streaming platform ... for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications." [1]
+"Apache Kafka is an open-source distributed event streaming platform ... for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications." [[1]](https://kafka.apache.org/quickstart)
 
-[1] https://kafka.apache.org/quickstart
+##  Use Cases
+
+Kafka excels at building scalable and fault tolerance event-driven systems. It allows to make various sources of data availble for different applications. 
+
+For example, a system may track prices of different products from one or more sources, and get supply and demand indicators from other sources, and feed these data into different applications, e.g., for display, analytics, or taking actions if certain conditions are met. 
+
+Kafka allows to efficiently handle the complexity arising from such systems.
 
 ## Architecture
 
