@@ -6,6 +6,17 @@ Summary notes on Kafka.
 
 [1] https://kafka.apache.org/quickstart
 
+## Architecture
+
+Kafka includes three key components: 
+
+1. Kafka `Producers` to send `events`, under different `topics`, and optionally to different `partitions`. 
+2. Kafka `Consumers` to receive events, by `subscribing` to different `topics`. Consumers are organized by in groups and identified by their `group id`.
+3. Kafka `Broker` to coordinate Producer-Consumer relationships.
+
+I ignored Apache ZooKeeper here, which is the default option to manage Kafka clusters, even when it is about a single node. 
+
+
 ## Setup
 
 ### 1. Install Java
