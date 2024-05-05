@@ -18,6 +18,12 @@ Kafka includes three key components:
 
 I ignored Apache ZooKeeper here, which is the default option to manage Kafka clusters, even when it is about a single node. 
 
+### Parallelism via Partitions
+
+Kafka's Partitioning allows to leverage the power of parallelism. In other words, writing the events of a topic in multiple paritions allows to consume the topic by multiple consumers. A key point is that each consumer of a consumer group is a assigned to a unique partition. It also means that having more consumer than partitions won't increase the throughput of the system.
+
+![Kafka Topic Paritions](./kafka-partition.drawio.svg)
+
 
 ## Setup
 
