@@ -1,8 +1,6 @@
-# kafka
+# Kafka
 
 Summary notes on Kafka.
-
-## About Kafka
 
 "Apache Kafka is an open-source distributed event streaming platform ... for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications." [1]
 
@@ -69,4 +67,8 @@ And open another terminal for `Consumer` with the same topic, set to get message
 $ bin/kafka-console-consumer.sh --topic t1 --from-beginning --bootstrap-server localhost:9092
 # It should print the messages sent via Producer
 ```
+
+Screenshot: Test of Kafka. A "hello, world!" event produced under the topic "t1", and captured by the consumer. Bootstarp server is running on the localhost, listening to the default port 9092.
+
+![Screenshot: test of Kafka](./kafka-test.png)
 
