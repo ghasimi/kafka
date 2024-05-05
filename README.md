@@ -8,6 +8,8 @@ Summary notes on Kafka.
 
 ## Architecture
 
+![Kafka Architecture](./kafka.drawio.svg)
+
 Kafka includes three key components: 
 
 1. Kafka `Producers` to send `events`, under different `topics`, and optionally to different `partitions`. 
