@@ -72,3 +72,14 @@ Screenshot: Test of Kafka. A "hello, world!" event produced under the topic "t1"
 
 ![Screenshot: test of Kafka](./kafka-test.png)
 
+## Python + Kafka
+
+Some Python packages to interface with Kafka:
+
+1. [kafka-python](https://github.com/dpkp/kafka-python/tree/master), simple and probably most popular with 5.5k stars on github as of early 2024.
+
+2. [confluent-kafka](https://github.com/confluentinc/confluent-kafka-python), backed by Confluent, the commercial maintainer of Kafka. It is built on a C/C++ Kafka library named `librdkafka`, presumably more performant.
+
+3. [faust](https://github.com/robinhood/faust), known for stream processing. Initially developed by Robinhood brokerage, but currently maintained by the communinty, forked as [faust-streaming](https://github.com/faust-streaming/faust). 
+
+
