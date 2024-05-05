@@ -6,9 +6,9 @@ Summary notes on Kafka.
 
 ##  Use Cases
 
-Kafka excels at building scalable and fault tolerance event-driven systems. It allows to make various sources of data availble for different applications. 
+Kafka excels at building scalable and fault-tolerant event-driven systems. It allows to make various sources of data availble for different applications. 
 
-For example, a system may track prices of different products from one or more sources, and get supply and demand indicators from other sources, and feed these data into different applications, e.g., for display, analytics, or taking actions if certain conditions are met. 
+For example, a system may track prices of different products from one or more sources, and get supply and demand indicators from other sources, and feed these data into different applications, e.g., to display, analyze, or take actions if certain conditions are met. 
 
 Kafka allows to efficiently handle the complexity arising from such systems.
 
@@ -26,7 +26,7 @@ I ignored Apache ZooKeeper here, which is the default option to manage Kafka clu
 
 ### Parallelism via Partitions
 
-Kafka's Partitioning allows to leverage the power of parallelism. In other words, writing the events of a topic in multiple paritions allows to consume the topic by multiple consumers. A key point is that each consumer of a consumer group is a assigned to a unique partition. It also means that having more consumer than partitions won't increase the throughput of the system.
+Kafka's Partitioning allows to leverage the power of parallelism. Writing the events of a topic in multiple paritions allows to consume the topic by multiple consumers. A key point is that each consumer within a consumer group is assigned to a unique partition. It also means that having more consumers than partitions won't increase the throughput of the system.
 
 ![Kafka Topic Paritions](./kafka-partition.drawio.svg)
 
@@ -79,6 +79,8 @@ And start Kafka in another terminal:
 ```
 $ bin/kafka-server-start.sh config/server.properties
 ```
+
+### 3. Hello, World!
 
 To test the system, open a new terminal for `Producer` and type a message:
 ```
